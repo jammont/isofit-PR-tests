@@ -1,0 +1,49 @@
+# Rebuilds the ISOFIT `dev` branch results for the main branch of this PR-tests results repo
+
+name: Dev
+
+jobs:
+  cache:
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          version: "0.9.25"
+
+      - name: Set up Python
+        run: |
+          uv python install 3.12
+          uv add git+https://github.com/isofit/isofit --branch dev
+
+      - name: Download Extras
+        shell: bash
+        run: |
+          echo "Downloading extras"
+          uv run isofit download all
+          echo "Building examples"
+          uv run isofit build
+
+      - name: Execute tests
+        run: |
+          mkdir -p dev
+          rm rf dev/*
+
+          source .venv/bin/activate
+          RUN=$(isofit path examples)/image_cube/small/
+          $RUN/default.sh --log_file dev/default.log --resources
+
+          isoplots spectra $RUN/output/ang20170323t202244_rfl -o dev/spectra.png
+          isoplots resources dev/default.resources.jsonl -o dev/default.resources.html -l dev/default.log --relative --debug
+
+      - name: Commit and push results
+        run: |
+          git add .
+          git commit -m "Updated dev results" || echo "No changes"
+          git push
