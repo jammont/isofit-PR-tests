@@ -25,6 +25,7 @@ jobs:
 
       - name: Set up Python
         run: |
+          uv init
           uv python install 3.12
           uv add git+https://github.com/isofit/isofit --branch dev
 
