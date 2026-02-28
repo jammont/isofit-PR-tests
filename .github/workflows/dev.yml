@@ -40,7 +40,7 @@ jobs:
       - name: Execute tests
         run: |
           mkdir -p dev
-          rm rf dev/*
+          rm -rf dev/*
 
           source .venv/bin/activate
           RUN=$(isofit path examples)/image_cube/small/
