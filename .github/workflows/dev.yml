@@ -2,8 +2,13 @@
 
 name: Dev
 
+on:
+  push:
+    - main
+  workflow_dispatch:
+
 jobs:
-  cache:
+  results:
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
