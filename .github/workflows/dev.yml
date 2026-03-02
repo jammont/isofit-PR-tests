@@ -56,7 +56,9 @@ jobs:
           isoplots resources dev/default.resources.jsonl -o dev/default.resources.html -l dev/default.log --relative --debug
 
       - name: Commit and push results
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: dev
+        run: |
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "Github Actions"
+          git add dev
+          git commit -m "Update dev results"
+          git push
