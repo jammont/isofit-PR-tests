@@ -46,7 +46,7 @@ jobs:
           RUN=$(isofit path examples)/image_cube/small/
           $RUN/default.sh --log_file dev/default.log --resources
 
-          cat dev/default.log
+          ls -lah $RUN/output
 
           isoplots spectra $RUN/output/ang20170323t202244_rfl -o dev/spectra.png
           isoplots resources dev/default.resources.jsonl -o dev/default.resources.html -l dev/default.log --relative --debug
