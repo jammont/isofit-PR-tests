@@ -49,6 +49,11 @@ jobs:
           isoplots spectra $RUN/output/ang20170323t202244_rfl -o dev/spectra.png -p 2 4 -p 8 2 -p 5 6
           isoplots resources dev/default.resources.jsonl -o dev/default.resources.html -l dev/default.log --relative --debug
 
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
       - name: Commit and push results
         run: |
           git add .
