@@ -8,21 +8,16 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   results:
-    continue-on-error: true
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
           ref: main
-          fetch-depth: 0
-          persist-credentials: false
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
@@ -56,9 +51,6 @@ jobs:
           isoplots resources dev/default.resources.jsonl -o dev/default.resources.html -l dev/default.log --relative --debug
 
       - name: Commit and push results
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add dev
-          git commit -m "Update dev results"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          file_pattern: 'dev/*'
