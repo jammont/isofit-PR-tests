@@ -1,302 +1,302 @@
-INFO:2026-03-03,00:05:00 || apply_oe.py:apply_oe() | Checking input data files...
-INFO:2026-03-03,00:05:00 || apply_oe.py:apply_oe() | ...Data file checks complete
-INFO:2026-03-03,00:05:00 || apply_oe.py:apply_oe() | Setting up files and directories....
-INFO:2026-03-03,00:05:00 || template_construction.py:__init__() | Flightline ID: ang20170323t202244
-INFO:2026-03-03,00:05:00 || template_construction.py:__init__() | no noise path found, proceeding without
-INFO:2026-03-03,00:05:00 || apply_oe.py:apply_oe() | ...file/directory setup complete
-INFO:2026-03-03,00:05:00 || apply_oe.py:apply_oe() | Using inversion windows: [[350.0, 1360.0], [1410, 1800.0], [1970.0, 2500.0]]
-INFO:2026-03-03,00:05:00 || template_construction.py:get_wavelengths() | No wavelength file provided. Obtaining wavelength grid from ENVI header of radiance cube.
-INFO:2026-03-03,00:05:00 || template_construction.py:get_wavelengths() | Wavelength units of nm inferred...converting to microns
-INFO:2026-03-03,00:05:00 || template_construction.py:check_surface_model() | No surface model provided. Build new one using given config file.
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Observation means:
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Path (km): 20.716992087408016
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | To-sensor azimuth (deg): 71.27130737250893
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | To-sensor zenith (deg): 17.34528282852098
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | To-sun azimuth (deg): 197.3237574125862
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | To-sun zenith (deg): 32.45698605676816
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Relative to-sun azimuth (deg): 126.05245004007726
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Altitude (km): 19.808562728369008
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Pre-solve H2O grid: [0.2  0.84 1.49 2.13 2.77 3.42 4.06 4.7  5.35 5.99]
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Writing H2O pre-solve configuration file.
-INFO:2026-03-03,00:05:01 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json.tmpl
-INFO:2026-03-03,00:05:01 || apply_oe.py:apply_oe() | Run ISOFIT initial guess
-INFO:2026-03-03,00:05:01 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json
-INFO:2026-03-03,00:05:01 || configs.py:get_config_errors() | Checking config sections for configuration issues
-INFO:2026-03-03,00:05:01 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
-INFO:2026-03-03,00:05:04 || isofit.py:run() | Running surfaces: uniform_surface
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:__init__() | Initializing LUT file
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
-INFO:2026-03-03,00:05:04 || sRTMnet.py:preSim() | Creating a simulator configuration
-INFO:2026-03-03,00:05:04 || sRTMnet.py:preSim() | Building simulator and executing (6S)
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:__init__() | Initializing LUT file
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
-INFO:2026-03-03,00:05:04 || radiative_transfer_engine.py:runSimulations() | Executing parallel simulations
-INFO:2026-03-03,00:05:12 || common.py:__call__() |  20.00% simulations complete (elapsed: 0:00:07.614322, rate: 0:00:00.761432, eta: 0:01:08.528898)
-INFO:2026-03-03,00:05:12 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:12 || common.py:__call__() |  30.00% simulations complete (elapsed: 0:00:07.787308, rate: 0:00:00.778731, eta: 0:00:31.149232)
-INFO:2026-03-03,00:05:12 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:12 || common.py:__call__() |  40.00% simulations complete (elapsed: 0:00:07.953648, rate: 0:00:00.795365, eta: 0:00:18.558512)
-INFO:2026-03-03,00:05:12 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:16 || common.py:__call__() |  50.00% simulations complete (elapsed: 0:00:11.360714, rate: 0:00:01.136071, eta: 0:00:17.041071)
-INFO:2026-03-03,00:05:16 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:16 || common.py:__call__() |  60.00% simulations complete (elapsed: 0:00:11.672462, rate: 0:00:01.167246, eta: 0:00:11.672462)
-INFO:2026-03-03,00:05:16 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:16 || common.py:__call__() |  70.00% simulations complete (elapsed: 0:00:11.835661, rate: 0:00:01.183566, eta: 0:00:07.890441)
-INFO:2026-03-03,00:05:16 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:16 || common.py:__call__() |  80.00% simulations complete (elapsed: 0:00:12.011104, rate: 0:00:01.201110, eta: 0:00:05.147616)
-INFO:2026-03-03,00:05:16 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:18 || common.py:__call__() |  90.00% simulations complete (elapsed: 0:00:13.920885, rate: 0:00:01.392088, eta: 0:00:03.480221)
-INFO:2026-03-03,00:05:18 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:18 || common.py:__call__() | 100.00% simulations complete (elapsed: 0:00:14.056648, rate: 0:00:01.405665, eta: 0:00:01.561850)
-INFO:2026-03-03,00:05:18 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:05:18 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
-INFO:2026-03-03,00:05:19 || radiative_transfer_engine.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
-INFO:2026-03-03,00:05:19 || luts.py:load() | Loading LUT into memory
-WARNING:2026-03-03,00:05:19 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
-WARNING:2026-03-03,00:05:19 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
-INFO:2026-03-03,00:05:19 || sRTMnet.py:preSim() | Interpolating simulator quantities to emulator size
-INFO:2026-03-03,00:05:19 || sRTMnet.py:preSim() | Loading and predicting with emulator on 4 cores
-INFO:2026-03-03,00:05:21 || radiative_transfer_engine.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
-INFO:2026-03-03,00:05:21 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
-INFO:2026-03-03,00:05:21 || luts.py:load() | Loading LUT into memory
-WARNING:2026-03-03,00:05:21 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
-WARNING:2026-03-03,00:05:21 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
-INFO:2026-03-03,00:05:21 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
-INFO:2026-03-03,00:05:26 ||| Worker 2 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:05:26 ||| Worker 0 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:05:27 ||| Worker 1 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:05:27 ||| Worker 3 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:05:27 ||| Worker at start location (0,6) completed 1/2
-INFO:2026-03-03,00:05:27 ||| Worker at start location (0,4) completed 2/3
-INFO:2026-03-03,00:05:27 ||| Worker at start location (0,9) completed 2/3
-INFO:2026-03-03,00:05:27 ||| Worker 1 completed 3/~25.0:: 12.0% complete
-INFO:2026-03-03,00:05:27 ||| Worker 2 completed 4/~25.0:: 16.0% complete
-INFO:2026-03-03,00:05:27 ||| Worker at start location (0,1) completed 1/2
-INFO:2026-03-03,00:05:27 ||| Worker 0 completed 4/~25.0:: 16.0% complete
-INFO:2026-03-03,00:05:27 ||| Worker at start location (1,1) completed 1/2
-INFO:2026-03-03,00:05:27 ||| Worker 3 completed 3/~25.0:: 12.0% complete
-INFO:2026-03-03,00:05:28 ||| Worker at start location (1,6) completed 1/2
-INFO:2026-03-03,00:05:28 ||| Worker 1 completed 5/~25.0:: 20.0% complete
-INFO:2026-03-03,00:05:28 ||| Worker at start location (1,4) completed 2/3
-INFO:2026-03-03,00:05:28 ||| Worker 0 completed 6/~25.0:: 24.0% complete
-INFO:2026-03-03,00:05:28 ||| Worker 2 completed 7/~25.0:: 28.0% complete
-INFO:2026-03-03,00:05:28 ||| Worker at start location (2,4) completed 1/2
-INFO:2026-03-03,00:05:28 ||| Worker at start location (1,9) completed 2/3
-INFO:2026-03-03,00:05:28 ||| Worker at start location (2,2) completed 2/3
-INFO:2026-03-03,00:05:28 ||| Worker 0 completed 8/~25.0:: 32.0% complete
-INFO:2026-03-03,00:05:28 ||| Worker 3 completed 6/~25.0:: 24.0% complete
-INFO:2026-03-03,00:05:28 ||| Worker at start location (2,7) completed 2/3
-INFO:2026-03-03,00:05:29 ||| Worker 1 completed 8/~25.0:: 32.0% complete
-INFO:2026-03-03,00:05:29 ||| Worker at start location (2,9) completed 1/2
-INFO:2026-03-03,00:05:29 ||| Worker 2 completed 10/~25.0:: 40.0% complete
-INFO:2026-03-03,00:05:29 ||| Worker at start location (3,4) completed 1/2
-INFO:2026-03-03,00:05:29 ||| Worker 0 completed 10/~25.0:: 40.0% complete
-INFO:2026-03-03,00:05:29 ||| Worker at start location (3,2) completed 2/3
-INFO:2026-03-03,00:05:30 ||| Worker 1 completed 10/~25.0:: 40.0% complete
-INFO:2026-03-03,00:05:30 ||| Worker 3 completed 9/~25.0:: 36.0% complete
-INFO:2026-03-03,00:05:30 ||| Worker at start location (4,0) completed 2/3
-INFO:2026-03-03,00:05:30 ||| Worker at start location (3,7) completed 2/3
-INFO:2026-03-03,00:05:31 ||| Worker at start location (4,2) completed 1/2
-INFO:2026-03-03,00:05:31 ||| Worker 2 completed 13/~25.0:: 52.0% complete
-INFO:2026-03-03,00:05:31 ||| Worker 0 completed 13/~25.0:: 52.0% complete
-INFO:2026-03-03,00:05:31 ||| Worker at start location (4,5) completed 2/3
-INFO:2026-03-03,00:05:32 ||| Worker 1 completed 12/~25.0:: 48.0% complete
-INFO:2026-03-03,00:05:32 ||| Worker at start location (4,7) completed 1/2
-INFO:2026-03-03,00:05:32 ||| Worker 3 completed 12/~25.0:: 48.0% complete
-INFO:2026-03-03,00:05:32 ||| Worker at start location (5,0) completed 2/3
-INFO:2026-03-03,00:05:32 ||| Worker 0 completed 15/~25.0:: 60.0% complete
-INFO:2026-03-03,00:05:32 ||| Worker at start location (5,2) completed 1/2
-INFO:2026-03-03,00:05:32 ||| Worker 2 completed 16/~25.0:: 64.0% complete
-INFO:2026-03-03,00:05:32 ||| Worker at start location (5,7) completed 1/2
-INFO:2026-03-03,00:05:33 ||| Worker 0 completed 17/~25.0:: 68.0% complete
-INFO:2026-03-03,00:05:33 ||| Worker 1 completed 14/~25.0:: 56.0% complete
-INFO:2026-03-03,00:05:33 ||| Worker at start location (5,5) completed 2/3
-INFO:2026-03-03,00:05:33 ||| Worker at start location (6,5) completed 1/2
-INFO:2026-03-03,00:05:33 ||| Worker 3 completed 15/~25.0:: 60.0% complete
-INFO:2026-03-03,00:05:33 ||| Worker at start location (6,0) completed 2/3
-INFO:2026-03-03,00:05:33 ||| Worker 0 completed 19/~25.0:: 76.0% complete
-INFO:2026-03-03,00:05:33 ||| Worker at start location (6,3) completed 2/3
-INFO:2026-03-03,00:05:33 ||| Worker 2 completed 19/~25.0:: 76.0% complete
-INFO:2026-03-03,00:05:33 ||| Worker at start location (7,0) completed 1/2
-INFO:2026-03-03,00:05:34 ||| Worker at start location (6,8) completed 2/3
-INFO:2026-03-03,00:05:34 ||| Worker 1 completed 17/~25.0:: 68.0% complete
-INFO:2026-03-03,00:05:34 ||| Worker 0 completed 21/~25.0:: 84.0% complete
-INFO:2026-03-03,00:05:34 ||| Worker 3 completed 18/~25.0:: 72.0% complete
-INFO:2026-03-03,00:05:34 ||| Worker at start location (7,3) completed 2/3
-INFO:2026-03-03,00:05:34 ||| Worker at start location (7,5) completed 1/2
-INFO:2026-03-03,00:05:34 ||| Worker 2 completed 22/~25.0:: 88.0% complete
-INFO:2026-03-03,00:05:34 ||| Worker 1 completed 19/~25.0:: 76.0% complete
-INFO:2026-03-03,00:05:34 ||| Worker at start location (7,8) completed 2/3
-INFO:2026-03-03,00:05:34 ||| Worker at start location (8,3) completed 1/2
-INFO:2026-03-03,00:05:34 ||| Worker at start location (8,1) completed 2/3
-INFO:2026-03-03,00:05:34 ||| Worker 0 completed 24/~25.0:: 96.0% complete
-INFO:2026-03-03,00:05:35 ||| Worker 2 completed 24/~25.0:: 96.0% complete
-INFO:2026-03-03,00:05:35 ||| Worker 3 completed 21/~25.0:: 84.0% complete
-INFO:2026-03-03,00:05:35 ||| Worker at start location (8,6) completed 2/3
-INFO:2026-03-03,00:05:35 ||| Worker at start location (8,8) completed 1/2
-INFO:2026-03-03,00:05:35 ||| Worker at start location (9,3) completed 1/2
-INFO:2026-03-03,00:05:35 ||| Worker 1 completed 22/~25.0:: 88.0% complete
-INFO:2026-03-03,00:05:35 ||| Worker at start location (9,1) completed 2/3
-INFO:2026-03-03,00:05:35 ||| Worker 0 completed 26/~25.0:: 104.0% complete
-INFO:2026-03-03,00:05:35 ||| Worker at start location (9,6) completed 2/3
-INFO:2026-03-03,00:05:35 ||| Worker at start location (9,9) completed 2/3
-INFO:2026-03-03,00:05:35 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
-INFO:2026-03-03,00:05:35 || isofit.py:run() | 14.06s total
-INFO:2026-03-03,00:05:35 || isofit.py:run() | 7.1126 spectra/s
-INFO:2026-03-03,00:05:35 || isofit.py:run() | 1.7782 spectra/s/core
-INFO:2026-03-03,00:05:35 || isofit.py:run() | All Inversions complete.
-INFO:2026-03-03,00:05:35 || isofit.py:run() | 31.35s total
-INFO:2026-03-03,00:05:35 || isofit.py:run() | 3.1894 spectra/s
-INFO:2026-03-03,00:05:35 || isofit.py:run() | 0.7974 spectra/s/core
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | Full (non-aerosol) LUTs:
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | Elevation: [0.     0.226  0.4519 0.6779 0.9039 1.1298 1.3558 1.5817 1.8077 2.0337]
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | To-sensor zenith: None
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | To-sun zenith: None
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | Relative to-sun azimuth: None
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | H2O Vapor: [1.0398 1.227  1.4141]
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | Writing main configuration file.
-INFO:2026-03-03,00:05:35 || template_construction.py:load_climatology() | Loading Climatology
-INFO:2026-03-03,00:05:35 || template_construction.py:load_climatology() | Climatology Loaded.  Aerosol State Vector:
+INFO:2026-03-05,22:27:28 || apply_oe.py:apply_oe() | Checking input data files...
+INFO:2026-03-05,22:27:28 || apply_oe.py:apply_oe() | ...Data file checks complete
+INFO:2026-03-05,22:27:28 || apply_oe.py:apply_oe() | Setting up files and directories....
+INFO:2026-03-05,22:27:28 || template_construction.py:__init__() | Flightline ID: ang20170323t202244
+INFO:2026-03-05,22:27:28 || template_construction.py:__init__() | no noise path found, proceeding without
+INFO:2026-03-05,22:27:28 || apply_oe.py:apply_oe() | ...file/directory setup complete
+INFO:2026-03-05,22:27:28 || apply_oe.py:apply_oe() | Using inversion windows: [[350.0, 1360.0], [1410, 1800.0], [1970.0, 2500.0]]
+INFO:2026-03-05,22:27:28 || template_construction.py:get_wavelengths() | No wavelength file provided. Obtaining wavelength grid from ENVI header of radiance cube.
+INFO:2026-03-05,22:27:28 || template_construction.py:get_wavelengths() | Wavelength units of nm inferred...converting to microns
+INFO:2026-03-05,22:27:28 || template_construction.py:check_surface_model() | No surface model provided. Build new one using given config file.
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Observation means:
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Path (km): 20.716992087408016
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | To-sensor azimuth (deg): 71.27130737250893
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | To-sensor zenith (deg): 17.34528282852098
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | To-sun azimuth (deg): 197.3237574125862
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | To-sun zenith (deg): 32.45698605676816
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Relative to-sun azimuth (deg): 126.05245004007726
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Altitude (km): 19.808562728369008
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Pre-solve H2O grid: [0.2  0.84 1.49 2.13 2.77 3.42 4.06 4.7  5.35 5.99]
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Writing H2O pre-solve configuration file.
+INFO:2026-03-05,22:27:29 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json.tmpl
+INFO:2026-03-05,22:27:29 || apply_oe.py:apply_oe() | Run ISOFIT initial guess
+INFO:2026-03-05,22:27:29 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json
+INFO:2026-03-05,22:27:29 || configs.py:get_config_errors() | Checking config sections for configuration issues
+INFO:2026-03-05,22:27:29 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
+INFO:2026-03-05,22:27:32 || isofit.py:run() | Running surfaces: uniform_surface
+INFO:2026-03-05,22:27:32 || radiative_transfer_engine.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
+INFO:2026-03-05,22:27:32 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
+INFO:2026-03-05,22:27:32 || radiative_transfer_engine.py:__init__() | Initializing LUT file
+INFO:2026-03-05,22:27:32 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
+INFO:2026-03-05,22:27:32 || sRTMnet.py:preSim() | Creating a simulator configuration
+INFO:2026-03-05,22:27:33 || sRTMnet.py:preSim() | Building simulator and executing (6S)
+INFO:2026-03-05,22:27:33 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
+INFO:2026-03-05,22:27:33 || radiative_transfer_engine.py:__init__() | Initializing LUT file
+INFO:2026-03-05,22:27:33 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
+INFO:2026-03-05,22:27:33 || radiative_transfer_engine.py:runSimulations() | Executing parallel simulations
+INFO:2026-03-05,22:27:41 || common.py:__call__() |  20.00% simulations complete (elapsed: 0:00:07.786846, rate: 0:00:00.778685, eta: 0:01:10.081614)
+INFO:2026-03-05,22:27:41 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:41 || common.py:__call__() |  30.00% simulations complete (elapsed: 0:00:07.959337, rate: 0:00:00.795934, eta: 0:00:31.837348)
+INFO:2026-03-05,22:27:41 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:41 || common.py:__call__() |  40.00% simulations complete (elapsed: 0:00:08.141928, rate: 0:00:00.814193, eta: 0:00:18.997832)
+INFO:2026-03-05,22:27:41 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:44 || common.py:__call__() |  50.00% simulations complete (elapsed: 0:00:11.782301, rate: 0:00:01.178230, eta: 0:00:17.673451)
+INFO:2026-03-05,22:27:44 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:45 || common.py:__call__() |  60.00% simulations complete (elapsed: 0:00:11.961237, rate: 0:00:01.196124, eta: 0:00:11.961237)
+INFO:2026-03-05,22:27:45 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:45 || common.py:__call__() |  70.00% simulations complete (elapsed: 0:00:12.136257, rate: 0:00:01.213626, eta: 0:00:08.090838)
+INFO:2026-03-05,22:27:45 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:45 || common.py:__call__() |  80.00% simulations complete (elapsed: 0:00:12.305762, rate: 0:00:01.230576, eta: 0:00:05.273898)
+INFO:2026-03-05,22:27:45 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:47 || common.py:__call__() |  90.00% simulations complete (elapsed: 0:00:14.194031, rate: 0:00:01.419403, eta: 0:00:03.548508)
+INFO:2026-03-05,22:27:47 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:47 || common.py:__call__() | 100.00% simulations complete (elapsed: 0:00:14.332865, rate: 0:00:01.433286, eta: 0:00:01.592541)
+INFO:2026-03-05,22:27:47 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:27:47 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
+INFO:2026-03-05,22:27:48 || radiative_transfer_engine.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
+INFO:2026-03-05,22:27:48 || luts.py:load() | Loading LUT into memory
+WARNING:2026-03-05,22:27:48 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
+WARNING:2026-03-05,22:27:48 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
+INFO:2026-03-05,22:27:48 || sRTMnet.py:preSim() | Interpolating simulator quantities to emulator size
+INFO:2026-03-05,22:27:48 || sRTMnet.py:preSim() | Loading and predicting with emulator on 4 cores
+INFO:2026-03-05,22:27:49 || radiative_transfer_engine.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
+INFO:2026-03-05,22:27:49 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
+INFO:2026-03-05,22:27:49 || luts.py:load() | Loading LUT into memory
+WARNING:2026-03-05,22:27:49 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
+WARNING:2026-03-05,22:27:49 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
+INFO:2026-03-05,22:27:50 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
+INFO:2026-03-05,22:27:55 ||| Worker 1 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:27:55 ||| Worker 0 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:27:55 ||| Worker 2 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:27:55 ||| Worker at start location (0,6) completed 1/2
+INFO:2026-03-05,22:27:55 ||| Worker 1 completed 3/~25.0:: 12.0% complete
+INFO:2026-03-05,22:27:55 ||| Worker at start location (0,9) completed 2/3
+INFO:2026-03-05,22:27:55 ||| Worker at start location (0,4) completed 2/3
+INFO:2026-03-05,22:27:55 ||| Worker 3 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker at start location (1,1) completed 1/2
+INFO:2026-03-05,22:27:56 ||| Worker 0 completed 4/~25.0:: 16.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker 2 completed 4/~25.0:: 16.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker 1 completed 5/~25.0:: 20.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker at start location (0,1) completed 1/2
+INFO:2026-03-05,22:27:56 ||| Worker at start location (1,6) completed 1/2
+INFO:2026-03-05,22:27:56 ||| Worker at start location (1,4) completed 2/3
+INFO:2026-03-05,22:27:56 ||| Worker 3 completed 3/~25.0:: 12.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker 2 completed 6/~25.0:: 24.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker at start location (1,9) completed 2/3
+INFO:2026-03-05,22:27:56 ||| Worker 0 completed 7/~25.0:: 28.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker at start location (2,4) completed 1/2
+INFO:2026-03-05,22:27:56 ||| Worker 1 completed 8/~25.0:: 32.0% complete
+INFO:2026-03-05,22:27:56 ||| Worker at start location (2,2) completed 2/3
+INFO:2026-03-05,22:27:56 ||| Worker 2 completed 8/~25.0:: 32.0% complete
+INFO:2026-03-05,22:27:57 ||| Worker at start location (2,7) completed 2/3
+INFO:2026-03-05,22:27:57 ||| Worker at start location (2,9) completed 1/2
+INFO:2026-03-05,22:27:57 ||| Worker 3 completed 6/~25.0:: 24.0% complete
+INFO:2026-03-05,22:27:57 ||| Worker 0 completed 10/~25.0:: 40.0% complete
+INFO:2026-03-05,22:27:57 ||| Worker 1 completed 10/~25.0:: 40.0% complete
+INFO:2026-03-05,22:27:57 ||| Worker at start location (3,4) completed 1/2
+INFO:2026-03-05,22:27:57 ||| Worker at start location (3,2) completed 2/3
+INFO:2026-03-05,22:27:57 ||| Worker 3 completed 8/~25.0:: 32.0% complete
+INFO:2026-03-05,22:27:58 ||| Worker 2 completed 11/~25.0:: 44.0% complete
+INFO:2026-03-05,22:27:58 ||| Worker at start location (3,7) completed 2/3
+INFO:2026-03-05,22:27:58 ||| Worker at start location (4,0) completed 2/3
+INFO:2026-03-05,22:27:58 ||| Worker at start location (4,2) completed 1/2
+INFO:2026-03-05,22:27:58 ||| Worker 1 completed 13/~25.0:: 52.0% complete
+INFO:2026-03-05,22:27:58 ||| Worker 0 completed 13/~25.0:: 52.0% complete
+INFO:2026-03-05,22:27:58 ||| Worker 3 completed 10/~25.0:: 40.0% complete
+INFO:2026-03-05,22:27:59 ||| Worker at start location (4,5) completed 2/3
+INFO:2026-03-05,22:27:59 ||| Worker at start location (4,7) completed 1/2
+INFO:2026-03-05,22:27:59 ||| Worker at start location (5,2) completed 1/2
+INFO:2026-03-05,22:27:59 ||| Worker at start location (5,0) completed 2/3
+INFO:2026-03-05,22:27:59 ||| Worker 0 completed 15/~25.0:: 60.0% complete
+INFO:2026-03-05,22:27:59 ||| Worker 3 completed 12/~25.0:: 48.0% complete
+INFO:2026-03-05,22:27:59 ||| Worker 2 completed 14/~25.0:: 56.0% complete
+INFO:2026-03-05,22:27:59 ||| Worker 1 completed 16/~25.0:: 64.0% complete
+INFO:2026-03-05,22:27:59 ||| Worker at start location (5,7) completed 1/2
+INFO:2026-03-05,22:27:59 ||| Worker 0 completed 17/~25.0:: 68.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker at start location (6,0) completed 2/3
+INFO:2026-03-05,22:28:00 ||| Worker at start location (6,5) completed 1/2
+INFO:2026-03-05,22:28:00 ||| Worker at start location (6,3) completed 2/3
+INFO:2026-03-05,22:28:00 ||| Worker at start location (5,5) completed 2/3
+INFO:2026-03-05,22:28:00 ||| Worker 3 completed 15/~25.0:: 60.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker 0 completed 19/~25.0:: 76.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker 1 completed 19/~25.0:: 76.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker 2 completed 17/~25.0:: 68.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker at start location (7,0) completed 1/2
+INFO:2026-03-05,22:28:00 ||| Worker at start location (7,5) completed 1/2
+INFO:2026-03-05,22:28:00 ||| Worker at start location (6,8) completed 2/3
+INFO:2026-03-05,22:28:00 ||| Worker at start location (7,3) completed 2/3
+INFO:2026-03-05,22:28:00 ||| Worker 0 completed 21/~25.0:: 84.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker 2 completed 19/~25.0:: 76.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker 3 completed 18/~25.0:: 72.0% complete
+INFO:2026-03-05,22:28:00 ||| Worker 1 completed 22/~25.0:: 88.0% complete
+INFO:2026-03-05,22:28:01 ||| Worker at start location (8,3) completed 1/2
+INFO:2026-03-05,22:28:01 ||| Worker at start location (7,8) completed 2/3
+INFO:2026-03-05,22:28:01 ||| Worker at start location (8,1) completed 2/3
+INFO:2026-03-05,22:28:01 ||| Worker 3 completed 20/~25.0:: 80.0% complete
+INFO:2026-03-05,22:28:01 ||| Worker at start location (8,6) completed 2/3
+INFO:2026-03-05,22:28:01 ||| Worker 0 completed 24/~25.0:: 96.0% complete
+INFO:2026-03-05,22:28:01 ||| Worker 2 completed 22/~25.0:: 88.0% complete
+INFO:2026-03-05,22:28:01 ||| Worker at start location (8,8) completed 1/2
+INFO:2026-03-05,22:28:01 ||| Worker 1 completed 25/~25.0:: 100.0% complete
+INFO:2026-03-05,22:28:01 ||| Worker at start location (9,3) completed 1/2
+INFO:2026-03-05,22:28:01 ||| Worker at start location (9,1) completed 2/3
+INFO:2026-03-05,22:28:01 ||| Worker 3 completed 22/~25.0:: 88.0% complete
+INFO:2026-03-05,22:28:01 ||| Worker at start location (9,6) completed 2/3
+INFO:2026-03-05,22:28:02 ||| Worker at start location (9,9) completed 2/3
+INFO:2026-03-05,22:28:02 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
+INFO:2026-03-05,22:28:02 || isofit.py:run() | 11.71s total
+INFO:2026-03-05,22:28:02 || isofit.py:run() | 8.537 spectra/s
+INFO:2026-03-05,22:28:02 || isofit.py:run() | 2.1342 spectra/s/core
+INFO:2026-03-05,22:28:02 || isofit.py:run() | All Inversions complete.
+INFO:2026-03-05,22:28:02 || isofit.py:run() | 29.17s total
+INFO:2026-03-05,22:28:02 || isofit.py:run() | 3.4285 spectra/s
+INFO:2026-03-05,22:28:02 || isofit.py:run() | 0.8571 spectra/s/core
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | Full (non-aerosol) LUTs:
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | Elevation: [0.     0.226  0.4519 0.6779 0.9039 1.1298 1.3558 1.5817 1.8077 2.0337]
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | To-sensor zenith: None
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | To-sun zenith: None
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | Relative to-sun azimuth: None
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | H2O Vapor: [1.0109 1.2174 1.424 ]
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | Writing main configuration file.
+INFO:2026-03-05,22:28:02 || template_construction.py:load_climatology() | Loading Climatology
+INFO:2026-03-05,22:28:02 || template_construction.py:load_climatology() | Climatology Loaded.  Aerosol State Vector:
 {'AOT550': {'bounds': [0.04209, 1.0], 'scale': 1, 'init': 0.137881, 'prior_sigma': 10.0, 'prior_mean': 0.137881}}
 Aerosol LUT Grid:
 {'AOT550': [0.04209, 0.137881, 0.233672, 0.329463, 0.425254, 0.521045, 0.6168359999999999, 0.712627, 0.808418, 0.9042089999999999, 1.0]}
 Aerosol model path:/home/runner/.isofit/data/aerosol_model.txt
-INFO:2026-03-03,00:05:35 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json.tmpl
-INFO:2026-03-03,00:05:35 || apply_oe.py:apply_oe() | Running ISOFIT with full LUT
-INFO:2026-03-03,00:05:35 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json
-INFO:2026-03-03,00:05:35 || configs.py:get_config_errors() | Checking config sections for configuration issues
-INFO:2026-03-03,00:05:35 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
-INFO:2026-03-03,00:05:36 || isofit.py:run() | Running surfaces: uniform_surface
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:__init__() | Initializing LUT file
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
-INFO:2026-03-03,00:05:36 || sRTMnet.py:preSim() | Creating a simulator configuration
-INFO:2026-03-03,00:05:36 || sRTMnet.py:preSim() | Building simulator and executing (6S)
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:__init__() | Initializing LUT file
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
-INFO:2026-03-03,00:05:36 || radiative_transfer_engine.py:runSimulations() | Executing parallel simulations
-INFO:2026-03-03,00:06:19 || common.py:__call__() |  10.30% simulations complete (elapsed: 0:00:42.825964, rate: 0:00:00.129776, eta: 0:06:25.433676)
-INFO:2026-03-03,00:06:19 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:06:56 || common.py:__call__() |  20.30% simulations complete (elapsed: 0:01:19.811401, rate: 0:00:00.241853, eta: 0:05:19.245604)
-INFO:2026-03-03,00:06:56 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:07:34 || common.py:__call__() |  30.00% simulations complete (elapsed: 0:01:57.541106, rate: 0:00:00.356185, eta: 0:04:34.262581)
-INFO:2026-03-03,00:07:34 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:08:10 || common.py:__call__() |  40.00% simulations complete (elapsed: 0:02:33.815846, rate: 0:00:00.466109, eta: 0:03:50.723769)
-INFO:2026-03-03,00:08:10 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:08:49 || common.py:__call__() |  50.00% simulations complete (elapsed: 0:03:12.338941, rate: 0:00:00.582845, eta: 0:03:12.338941)
-INFO:2026-03-03,00:08:49 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:09:26 || common.py:__call__() |  60.00% simulations complete (elapsed: 0:03:49.781802, rate: 0:00:00.696308, eta: 0:02:33.187868)
-INFO:2026-03-03,00:09:26 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:10:03 || common.py:__call__() |  70.00% simulations complete (elapsed: 0:04:26.764723, rate: 0:00:00.808378, eta: 0:01:54.327738)
-INFO:2026-03-03,00:10:03 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:10:40 || common.py:__call__() |  80.00% simulations complete (elapsed: 0:05:03.854789, rate: 0:00:00.920772, eta: 0:01:15.963697)
-INFO:2026-03-03,00:10:40 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:11:18 || common.py:__call__() |  90.00% simulations complete (elapsed: 0:05:42.086443, rate: 0:00:01.036626, eta: 0:00:38.009605)
-INFO:2026-03-03,00:11:18 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:11:56 || common.py:__call__() | 100.00% simulations complete (elapsed: 0:06:20.007260, rate: 0:00:01.151537, eta: 0:00:00)
-INFO:2026-03-03,00:11:56 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-03-03,00:11:56 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
-INFO:2026-03-03,00:11:57 || radiative_transfer_engine.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
-INFO:2026-03-03,00:11:57 || luts.py:load() | Loading LUT into memory
-WARNING:2026-03-03,00:11:57 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
-WARNING:2026-03-03,00:11:57 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
-INFO:2026-03-03,00:11:57 || sRTMnet.py:preSim() | Interpolating simulator quantities to emulator size
-INFO:2026-03-03,00:11:57 || sRTMnet.py:preSim() | Loading and predicting with emulator on 4 cores
-INFO:2026-03-03,00:12:00 || radiative_transfer_engine.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
-INFO:2026-03-03,00:12:00 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
-INFO:2026-03-03,00:12:00 || luts.py:load() | Loading LUT into memory
-WARNING:2026-03-03,00:12:00 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
-WARNING:2026-03-03,00:12:00 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
-INFO:2026-03-03,00:12:01 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
-INFO:2026-03-03,00:12:07 ||| Worker 0 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:12:07 ||| Worker 1 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:12:08 ||| Worker 2 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:12:08 ||| Worker 3 completed 1/~25.0:: 4.0% complete
-INFO:2026-03-03,00:12:09 ||| Worker at start location (0,6) completed 1/2
-INFO:2026-03-03,00:12:09 ||| Worker at start location (0,1) completed 1/2
-INFO:2026-03-03,00:12:10 ||| Worker at start location (0,4) completed 2/3
-INFO:2026-03-03,00:12:11 ||| Worker 1 completed 3/~25.0:: 12.0% complete
-INFO:2026-03-03,00:12:11 ||| Worker 3 completed 3/~25.0:: 12.0% complete
-INFO:2026-03-03,00:12:11 ||| Worker at start location (0,9) completed 2/3
-INFO:2026-03-03,00:12:12 ||| Worker 2 completed 4/~25.0:: 16.0% complete
-INFO:2026-03-03,00:12:12 ||| Worker at start location (1,1) completed 1/2
-INFO:2026-03-03,00:12:13 ||| Worker 0 completed 4/~25.0:: 16.0% complete
-INFO:2026-03-03,00:12:14 ||| Worker at start location (1,6) completed 1/2
-INFO:2026-03-03,00:12:14 ||| Worker 1 completed 5/~25.0:: 20.0% complete
-INFO:2026-03-03,00:12:14 ||| Worker at start location (1,4) completed 2/3
-INFO:2026-03-03,00:12:15 ||| Worker 2 completed 6/~25.0:: 24.0% complete
-INFO:2026-03-03,00:12:16 ||| Worker 3 completed 6/~25.0:: 24.0% complete
-INFO:2026-03-03,00:12:17 ||| Worker at start location (2,4) completed 1/2
-INFO:2026-03-03,00:12:17 ||| Worker at start location (1,9) completed 2/3
-INFO:2026-03-03,00:12:17 ||| Worker at start location (2,2) completed 2/3
-INFO:2026-03-03,00:12:18 ||| Worker 2 completed 8/~25.0:: 32.0% complete
-INFO:2026-03-03,00:12:18 ||| Worker 0 completed 7/~25.0:: 28.0% complete
-INFO:2026-03-03,00:12:19 ||| Worker at start location (2,7) completed 2/3
-INFO:2026-03-03,00:12:20 ||| Worker 1 completed 8/~25.0:: 32.0% complete
-INFO:2026-03-03,00:12:20 ||| Worker at start location (2,9) completed 1/2
-INFO:2026-03-03,00:12:21 ||| Worker 3 completed 9/~25.0:: 36.0% complete
-INFO:2026-03-03,00:12:22 ||| Worker at start location (3,4) completed 1/2
-INFO:2026-03-03,00:12:23 ||| Worker at start location (3,2) completed 2/3
-INFO:2026-03-03,00:12:24 ||| Worker 2 completed 10/~25.0:: 40.0% complete
-INFO:2026-03-03,00:12:24 ||| Worker 1 completed 10/~25.0:: 40.0% complete
-INFO:2026-03-03,00:12:26 ||| Worker 0 completed 10/~25.0:: 40.0% complete
-INFO:2026-03-03,00:12:27 ||| Worker at start location (3,7) completed 2/3
-INFO:2026-03-03,00:12:27 ||| Worker at start location (4,2) completed 1/2
-INFO:2026-03-03,00:12:29 ||| Worker at start location (4,0) completed 2/3
-INFO:2026-03-03,00:12:29 ||| Worker 1 completed 12/~25.0:: 48.0% complete
-INFO:2026-03-03,00:12:29 ||| Worker 3 completed 12/~25.0:: 48.0% complete
-INFO:2026-03-03,00:12:31 ||| Worker 2 completed 13/~25.0:: 52.0% complete
-INFO:2026-03-03,00:12:31 ||| Worker at start location (4,5) completed 2/3
-INFO:2026-03-03,00:12:32 ||| Worker at start location (4,7) completed 1/2
-INFO:2026-03-03,00:12:33 ||| Worker 0 completed 13/~25.0:: 52.0% complete
-INFO:2026-03-03,00:12:34 ||| Worker at start location (5,0) completed 2/3
-INFO:2026-03-03,00:12:34 ||| Worker at start location (5,2) completed 1/2
-INFO:2026-03-03,00:12:34 ||| Worker 3 completed 14/~25.0:: 56.0% complete
-INFO:2026-03-03,00:12:35 ||| Worker 1 completed 15/~25.0:: 60.0% complete
-INFO:2026-03-03,00:12:36 ||| Worker at start location (5,7) completed 1/2
-INFO:2026-03-03,00:12:37 ||| Worker 2 completed 15/~25.0:: 60.0% complete
-INFO:2026-03-03,00:12:37 ||| Worker 3 completed 16/~25.0:: 64.0% complete
-INFO:2026-03-03,00:12:38 ||| Worker at start location (5,5) completed 2/3
-INFO:2026-03-03,00:12:39 ||| Worker at start location (6,5) completed 1/2
-INFO:2026-03-03,00:12:39 ||| Worker at start location (6,0) completed 2/3
-INFO:2026-03-03,00:12:39 ||| Worker 0 completed 16/~25.0:: 64.0% complete
-INFO:2026-03-03,00:12:40 ||| Worker 3 completed 18/~25.0:: 72.0% complete
-INFO:2026-03-03,00:12:40 ||| Worker 1 completed 18/~25.0:: 72.0% complete
-INFO:2026-03-03,00:12:41 ||| Worker at start location (6,3) completed 2/3
-INFO:2026-03-03,00:12:42 ||| Worker 2 completed 18/~25.0:: 72.0% complete
-INFO:2026-03-03,00:12:42 ||| Worker at start location (7,0) completed 1/2
-INFO:2026-03-03,00:12:43 ||| Worker at start location (6,8) completed 2/3
-INFO:2026-03-03,00:12:44 ||| Worker at start location (7,5) completed 1/2
-INFO:2026-03-03,00:12:44 ||| Worker at start location (7,3) completed 2/3
-INFO:2026-03-03,00:12:44 ||| Worker 3 completed 20/~25.0:: 80.0% complete
-INFO:2026-03-03,00:12:44 ||| Worker 0 completed 19/~25.0:: 76.0% complete
-INFO:2026-03-03,00:12:45 ||| Worker 2 completed 20/~25.0:: 80.0% complete
-INFO:2026-03-03,00:12:45 ||| Worker 1 completed 21/~25.0:: 84.0% complete
-INFO:2026-03-03,00:12:47 ||| Worker at start location (8,3) completed 1/2
-INFO:2026-03-03,00:12:47 ||| Worker at start location (7,8) completed 2/3
-INFO:2026-03-03,00:12:47 ||| Worker at start location (8,1) completed 2/3
-INFO:2026-03-03,00:12:48 ||| Worker at start location (8,6) completed 2/3
-INFO:2026-03-03,00:12:48 ||| Worker 2 completed 22/~25.0:: 88.0% complete
-INFO:2026-03-03,00:12:49 ||| Worker 3 completed 23/~25.0:: 92.0% complete
-INFO:2026-03-03,00:12:49 ||| Worker 0 completed 22/~25.0:: 88.0% complete
-INFO:2026-03-03,00:12:50 ||| Worker 1 completed 24/~25.0:: 96.0% complete
-INFO:2026-03-03,00:12:50 ||| Worker at start location (8,8) completed 1/2
-INFO:2026-03-03,00:12:51 ||| Worker at start location (9,3) completed 1/2
-INFO:2026-03-03,00:12:52 ||| Worker at start location (9,1) completed 2/3
-INFO:2026-03-03,00:12:52 ||| Worker 2 completed 24/~25.0:: 96.0% complete
-INFO:2026-03-03,00:12:52 ||| Worker at start location (9,6) completed 2/3
-INFO:2026-03-03,00:12:55 ||| Worker at start location (9,9) completed 2/3
-INFO:2026-03-03,00:12:55 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
-INFO:2026-03-03,00:12:55 || isofit.py:run() | 53.91s total
-INFO:2026-03-03,00:12:55 || isofit.py:run() | 1.855 spectra/s
-INFO:2026-03-03,00:12:55 || isofit.py:run() | 0.4637 spectra/s/core
-INFO:2026-03-03,00:12:55 || isofit.py:run() | All Inversions complete.
-INFO:2026-03-03,00:12:55 || isofit.py:run() | 439.07s total
-INFO:2026-03-03,00:12:55 || isofit.py:run() | 0.2278 spectra/s
-INFO:2026-03-03,00:12:55 || isofit.py:run() | 0.0569 spectra/s/core
-INFO:2026-03-03,00:12:55 || apply_oe.py:apply_oe() | Done.
+INFO:2026-03-05,22:28:02 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json.tmpl
+INFO:2026-03-05,22:28:02 || apply_oe.py:apply_oe() | Running ISOFIT with full LUT
+INFO:2026-03-05,22:28:02 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json
+INFO:2026-03-05,22:28:02 || configs.py:get_config_errors() | Checking config sections for configuration issues
+INFO:2026-03-05,22:28:02 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
+INFO:2026-03-05,22:28:02 || isofit.py:run() | Running surfaces: uniform_surface
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:__init__() | Initializing LUT file
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
+INFO:2026-03-05,22:28:02 || sRTMnet.py:preSim() | Creating a simulator configuration
+INFO:2026-03-05,22:28:02 || sRTMnet.py:preSim() | Building simulator and executing (6S)
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:__init__() | Initializing LUT file
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
+INFO:2026-03-05,22:28:02 || radiative_transfer_engine.py:runSimulations() | Executing parallel simulations
+INFO:2026-03-05,22:28:45 || common.py:__call__() |  10.30% simulations complete (elapsed: 0:00:42.767032, rate: 0:00:00.129597, eta: 0:06:24.903288)
+INFO:2026-03-05,22:28:45 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:29:23 || common.py:__call__() |  20.30% simulations complete (elapsed: 0:01:19.980578, rate: 0:00:00.242365, eta: 0:05:19.922312)
+INFO:2026-03-05,22:29:23 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:30:01 || common.py:__call__() |  30.00% simulations complete (elapsed: 0:01:58.251583, rate: 0:00:00.358338, eta: 0:04:35.920360)
+INFO:2026-03-05,22:30:01 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:30:36 || common.py:__call__() |  40.00% simulations complete (elapsed: 0:02:33.614398, rate: 0:00:00.465498, eta: 0:03:50.421597)
+INFO:2026-03-05,22:30:36 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:31:15 || common.py:__call__() |  50.00% simulations complete (elapsed: 0:03:12.515112, rate: 0:00:00.583379, eta: 0:03:12.515112)
+INFO:2026-03-05,22:31:15 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:31:53 || common.py:__call__() |  60.00% simulations complete (elapsed: 0:03:50.276801, rate: 0:00:00.697808, eta: 0:02:33.517867)
+INFO:2026-03-05,22:31:53 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:32:30 || common.py:__call__() |  70.00% simulations complete (elapsed: 0:04:27.845241, rate: 0:00:00.811652, eta: 0:01:54.790818)
+INFO:2026-03-05,22:32:30 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:33:06 || common.py:__call__() |  80.00% simulations complete (elapsed: 0:05:03.559340, rate: 0:00:00.919877, eta: 0:01:15.889835)
+INFO:2026-03-05,22:33:06 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:33:45 || common.py:__call__() |  90.00% simulations complete (elapsed: 0:05:42.290431, rate: 0:00:01.037244, eta: 0:00:38.032270)
+INFO:2026-03-05,22:33:45 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:34:23 || common.py:__call__() | 100.00% simulations complete (elapsed: 0:06:20.590296, rate: 0:00:01.153304, eta: 0:00:00)
+INFO:2026-03-05,22:34:23 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-03-05,22:34:23 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
+INFO:2026-03-05,22:34:24 || radiative_transfer_engine.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
+INFO:2026-03-05,22:34:24 || luts.py:load() | Loading LUT into memory
+WARNING:2026-03-05,22:34:24 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
+WARNING:2026-03-05,22:34:24 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
+INFO:2026-03-05,22:34:24 || sRTMnet.py:preSim() | Interpolating simulator quantities to emulator size
+INFO:2026-03-05,22:34:24 || sRTMnet.py:preSim() | Loading and predicting with emulator on 4 cores
+INFO:2026-03-05,22:34:28 || radiative_transfer_engine.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
+INFO:2026-03-05,22:34:28 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
+INFO:2026-03-05,22:34:28 || luts.py:load() | Loading LUT into memory
+WARNING:2026-03-05,22:34:28 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
+WARNING:2026-03-05,22:34:28 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
+INFO:2026-03-05,22:34:28 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
+INFO:2026-03-05,22:34:34 ||| Worker 2 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:34:35 ||| Worker 1 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:34:35 ||| Worker 3 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:34:35 ||| Worker 0 completed 1/~25.0:: 4.0% complete
+INFO:2026-03-05,22:34:36 ||| Worker at start location (0,6) completed 1/2
+INFO:2026-03-05,22:34:36 ||| Worker at start location (0,4) completed 2/3
+INFO:2026-03-05,22:34:37 ||| Worker at start location (0,1) completed 1/2
+INFO:2026-03-05,22:34:38 ||| Worker 1 completed 3/~25.0:: 12.0% complete
+INFO:2026-03-05,22:34:38 ||| Worker 2 completed 4/~25.0:: 16.0% complete
+INFO:2026-03-05,22:34:38 ||| Worker at start location (0,9) completed 2/3
+INFO:2026-03-05,22:34:39 ||| Worker 3 completed 3/~25.0:: 12.0% complete
+INFO:2026-03-05,22:34:39 ||| Worker at start location (1,1) completed 1/2
+INFO:2026-03-05,22:34:40 ||| Worker 0 completed 4/~25.0:: 16.0% complete
+INFO:2026-03-05,22:34:40 ||| Worker at start location (1,6) completed 1/2
+INFO:2026-03-05,22:34:41 ||| Worker 1 completed 5/~25.0:: 20.0% complete
+INFO:2026-03-05,22:34:41 ||| Worker at start location (1,4) completed 2/3
+INFO:2026-03-05,22:34:42 ||| Worker 3 completed 5/~25.0:: 20.0% complete
+INFO:2026-03-05,22:34:42 ||| Worker 2 completed 7/~25.0:: 28.0% complete
+INFO:2026-03-05,22:34:43 ||| Worker at start location (2,4) completed 1/2
+INFO:2026-03-05,22:34:43 ||| Worker at start location (1,9) completed 2/3
+INFO:2026-03-05,22:34:44 ||| Worker at start location (2,2) completed 2/3
+INFO:2026-03-05,22:34:44 ||| Worker 3 completed 7/~25.0:: 28.0% complete
+INFO:2026-03-05,22:34:44 ||| Worker 0 completed 7/~25.0:: 28.0% complete
+INFO:2026-03-05,22:34:45 ||| Worker at start location (2,7) completed 2/3
+INFO:2026-03-05,22:34:46 ||| Worker 1 completed 8/~25.0:: 32.0% complete
+INFO:2026-03-05,22:34:46 ||| Worker at start location (2,9) completed 1/2
+INFO:2026-03-05,22:34:47 ||| Worker 2 completed 10/~25.0:: 40.0% complete
+INFO:2026-03-05,22:34:47 ||| Worker at start location (3,4) completed 1/2
+INFO:2026-03-05,22:34:48 ||| Worker at start location (3,2) completed 2/3
+INFO:2026-03-05,22:34:49 ||| Worker 3 completed 9/~25.0:: 36.0% complete
+INFO:2026-03-05,22:34:50 ||| Worker 1 completed 10/~25.0:: 40.0% complete
+INFO:2026-03-05,22:34:51 ||| Worker 0 completed 10/~25.0:: 40.0% complete
+INFO:2026-03-05,22:34:51 ||| Worker at start location (3,7) completed 2/3
+INFO:2026-03-05,22:34:53 ||| Worker at start location (4,2) completed 1/2
+INFO:2026-03-05,22:34:54 ||| Worker at start location (4,0) completed 2/3
+INFO:2026-03-05,22:34:54 ||| Worker 2 completed 13/~25.0:: 52.0% complete
+INFO:2026-03-05,22:34:55 ||| Worker 1 completed 12/~25.0:: 48.0% complete
+INFO:2026-03-05,22:34:56 ||| Worker at start location (4,7) completed 1/2
+INFO:2026-03-05,22:34:56 ||| Worker 3 completed 12/~25.0:: 48.0% complete
+INFO:2026-03-05,22:34:57 ||| Worker at start location (4,5) completed 2/3
+INFO:2026-03-05,22:34:58 ||| Worker 2 completed 15/~25.0:: 60.0% complete
+INFO:2026-03-05,22:34:59 ||| Worker at start location (5,2) completed 1/2
+INFO:2026-03-05,22:34:59 ||| Worker 0 completed 13/~25.0:: 52.0% complete
+INFO:2026-03-05,22:34:59 ||| Worker at start location (5,0) completed 2/3
+INFO:2026-03-05,22:35:00 ||| Worker 3 completed 14/~25.0:: 56.0% complete
+INFO:2026-03-05,22:35:01 ||| Worker at start location (5,7) completed 1/2
+INFO:2026-03-05,22:35:02 ||| Worker 1 completed 15/~25.0:: 60.0% complete
+INFO:2026-03-05,22:35:02 ||| Worker 0 completed 15/~25.0:: 60.0% complete
+INFO:2026-03-05,22:35:03 ||| Worker at start location (5,5) completed 2/3
+INFO:2026-03-05,22:35:03 ||| Worker at start location (6,5) completed 1/2
+INFO:2026-03-05,22:35:04 ||| Worker at start location (6,0) completed 2/3
+INFO:2026-03-05,22:35:04 ||| Worker 2 completed 18/~25.0:: 72.0% complete
+INFO:2026-03-05,22:35:05 ||| Worker 0 completed 17/~25.0:: 68.0% complete
+INFO:2026-03-05,22:35:05 ||| Worker at start location (6,3) completed 2/3
+INFO:2026-03-05,22:35:05 ||| Worker 3 completed 17/~25.0:: 68.0% complete
+INFO:2026-03-05,22:35:06 ||| Worker at start location (7,0) completed 1/2
+INFO:2026-03-05,22:35:07 ||| Worker 1 completed 18/~25.0:: 72.0% complete
+INFO:2026-03-05,22:35:07 ||| Worker at start location (6,8) completed 2/3
+INFO:2026-03-05,22:35:08 ||| Worker 0 completed 19/~25.0:: 76.0% complete
+INFO:2026-03-05,22:35:08 ||| Worker at start location (7,5) completed 1/2
+INFO:2026-03-05,22:35:08 ||| Worker at start location (7,3) completed 2/3
+INFO:2026-03-05,22:35:08 ||| Worker 2 completed 21/~25.0:: 84.0% complete
+INFO:2026-03-05,22:35:09 ||| Worker 1 completed 20/~25.0:: 80.0% complete
+INFO:2026-03-05,22:35:09 ||| Worker 3 completed 20/~25.0:: 80.0% complete
+INFO:2026-03-05,22:35:11 ||| Worker at start location (7,8) completed 2/3
+INFO:2026-03-05,22:35:11 ||| Worker at start location (8,3) completed 1/2
+INFO:2026-03-05,22:35:11 ||| Worker at start location (8,1) completed 2/3
+INFO:2026-03-05,22:35:12 ||| Worker 0 completed 22/~25.0:: 88.0% complete
+INFO:2026-03-05,22:35:12 ||| Worker at start location (8,6) completed 2/3
+INFO:2026-03-05,22:35:12 ||| Worker 1 completed 22/~25.0:: 88.0% complete
+INFO:2026-03-05,22:35:13 ||| Worker 2 completed 24/~25.0:: 96.0% complete
+INFO:2026-03-05,22:35:13 ||| Worker at start location (8,8) completed 1/2
+INFO:2026-03-05,22:35:13 ||| Worker 3 completed 23/~25.0:: 92.0% complete
+INFO:2026-03-05,22:35:14 ||| Worker at start location (9,3) completed 1/2
+INFO:2026-03-05,22:35:15 ||| Worker at start location (9,1) completed 2/3
+INFO:2026-03-05,22:35:15 ||| Worker 0 completed 24/~25.0:: 96.0% complete
+INFO:2026-03-05,22:35:15 ||| Worker at start location (9,6) completed 2/3
+INFO:2026-03-05,22:35:17 ||| Worker at start location (9,9) completed 2/3
+INFO:2026-03-05,22:35:17 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
+INFO:2026-03-05,22:35:17 || isofit.py:run() | 48.77s total
+INFO:2026-03-05,22:35:17 || isofit.py:run() | 2.0504 spectra/s
+INFO:2026-03-05,22:35:17 || isofit.py:run() | 0.5126 spectra/s/core
+INFO:2026-03-05,22:35:17 || isofit.py:run() | All Inversions complete.
+INFO:2026-03-05,22:35:17 || isofit.py:run() | 435.2s total
+INFO:2026-03-05,22:35:17 || isofit.py:run() | 0.2298 spectra/s
+INFO:2026-03-05,22:35:17 || isofit.py:run() | 0.0574 spectra/s/core
+INFO:2026-03-05,22:35:17 || apply_oe.py:apply_oe() | Done.
